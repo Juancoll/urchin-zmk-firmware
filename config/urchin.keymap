@@ -167,9 +167,10 @@
         };
 
         // Y + U + I = Studio Unlock (positions 5 + 6 + 7)
+        // 3-key combo needs higher timeout than 2-key combos
 #ifdef CONFIG_ZMK_STUDIO
         combo_studio_unlock {
-            timeout-ms = <50>;
+            timeout-ms = <150>;
             key-positions = <5 6 7>;
             bindings = <&studio_unlock>;
         };
