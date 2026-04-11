@@ -24,12 +24,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#ifdef CONFIG_ZMK_STUDIO
-  #include <dt-bindings/zmk/studio.h>
-  #define STUDIO_UNLOCK &studio_unlock
-#else
-  #define STUDIO_UNLOCK &none
-#endif
+// ZMK Studio: locking disabled via CONFIG_ZMK_STUDIO_LOCKING=n in urchin.conf
+// No studio_unlock behavior needed
 
 // Layer definitions
 #define BASE 0
@@ -253,7 +249,7 @@
         layer_Settings {
             label = "Sett.";
             bindings = <
-                &bootloader     &none  &none  &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 3  STUDIO_UNLOCK  &none  &none  &bootloader
+                &bootloader     &none  &none  &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 3  &none  &none  &none  &bootloader
                 &none           &none  &none  &none       &bt BT_SEL 1     &bt BT_SEL 4  &none          &none  &none  &none
                 &sys_reset      &none  &none  &none       &bt BT_SEL 2     &bt BT_SEL 5  &none          &none  &none  &sys_reset
                                                &none       &none            &none         &none
