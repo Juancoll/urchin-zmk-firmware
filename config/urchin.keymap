@@ -162,6 +162,13 @@
             bindings = <&mo SETTINGS>;
         };
 
+        // Both right thumbs = Settings layer (BT, bootloader)
+        combo_settings_right {
+            timeout-ms = <200>;
+            key-positions = <32 33>;
+            bindings = <&mo SETTINGS>;
+        };
+
 
     };
 
