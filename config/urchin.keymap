@@ -174,14 +174,14 @@
         //  Q    W    E    R    T        Y    U    I    O    P
         // GUI/A ALT/S CTL/D SFT/F G    H   SFT/J CTL/K ALT/L GUI/ñ
         //  Z    X    C    V    B        N    M    ,    .    -
-        //                NUM/´ NAV/Sp  SYM/En MED/`
+        //                NUM/´ SYM/Sp  NAV/En MED/`
         layer_Base {
             label = "Base";
             bindings = <
                 &kp Q        &kp W        &kp E         &kp R         &kp T            &kp Y   &kp U         &kp I         &kp O        &kp P
                 &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G            &kp H   &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
                 &kp Z        &kp X        &kp C         &kp V         &kp B            &kp N   &kp M         &kp COMMA     &kp DOT      &kp FSLH
-                                                         &ltl NUM SQT  &ltl NAV SPACE   &ltr SYM RET  &ltr MED LBKT
+                                                         &ltl NUM SQT  &ltl SYM SPACE   &ltr NAV RET  &ltr MED LBKT
             >;
         };
 
@@ -199,7 +199,7 @@
         };
 
         // ========================================
-        // LAYER 2: FN + NAVIGATION + CLIPBOARD (hold NAV/Space)
+        // LAYER 2: FN + NAVIGATION + CLIPBOARD (hold NAV/Enter)
         // ========================================
         layer_Nav {
             label = "Nav";
@@ -207,12 +207,12 @@
                 &kp F1    &kp F2    &kp F3     &kp F4     &kp F5        &kp F6    &kp F7     &kp F8     &kp F9     &kp F10
                 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none         &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp F11
                 &kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V)  &kp LC(Y)     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp F12
-                                                &none      &trans        &none     &none
+                                                &none      &none         &trans    &none
             >;
         };
 
         // ========================================
-        // LAYER 3: SYMBOLS (ES layout)
+        // LAYER 3: SYMBOLS (ES layout) (hold SYM/Space)
         // ========================================
         // What you see (ES):
         //  |    @    #    ~    %        &    /    (    )    =
@@ -224,7 +224,7 @@
                 &kp RA(N1)     &kp RA(N2)     &kp RA(N3)    &kp RA(N4)     &kp LS(N5)       &kp LS(N6)     &kp LS(N7)  &kp LS(N8)   &kp LS(N9)     &kp LS(N0)
                 &kp LS(N1)     &kp LS(N2)     &kp RA(SQT)   &kp RA(BSLH)   &kp RBKT         &kp MINUS      &kp SQT     &kp LBKT     &kp LS(LBKT)   &kp LS(SQT)
                 &kp RA(GRAVE)  &kp LS(N4)     &kp RA(LBKT)  &kp RA(RBKT)   &kp LS(RBKT)     &kp LS(MINUS)  &kp NUBS    &kp LS(NUBS) &kp LS(EQUAL)  &kp EQUAL
-                                                              &none          &none            &trans         &none
+                                                              &none          &trans           &none         &none
             >;
         };
 
